@@ -3,7 +3,7 @@ const cors = require('cors');
 const app = express();
 const coronaRouter = require('./routers/corona');
 
-app.set('port',3001);
+app.set('port', process.env.PORT || 3001);
 app.use(cors());
 
 
